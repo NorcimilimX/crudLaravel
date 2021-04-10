@@ -15,7 +15,12 @@
             <li class="list-group-item">Updated: {{ $user->updated_at->format('d/m/y H:i:s') }}</li>
         </ul>
     </div>
-    <a type="button" class="btn btn-warning mt-3" href="{{ route('users.edit', $user) }}">Edit</a>
 
+    <form method="post" class="mt-3" action="{{ route('users.destroy', $user) }}">
+        <a type="button" class="btn btn-warning" href="{{ route('users.edit', $user) }}">Edit</a>
+        @csrf
+        @method('DELETE')
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
 
 @endsection
