@@ -1,19 +1,19 @@
-### Index page 
+# Index page 
 ![](images/screenIndexUp.png)
-###Index page down
+##Index page down
 ![](images/screenIndexDown.png)
 
 ###Create form
 ![](images/screenCreate.png)
 If everything is ok, and you put the correct data.You'll see redirection and flash.
 
-###Alert add user
+####Alert add user
 ![](images/screenIndexFlash.png)
 
-###Update 
+#####Update 
 Also you may update records and do changes you need.
 ![](images/screenUpdate.png)
 
-###Show card
+######Show card
 All information about user.
 ![](images/screenShow.png)
