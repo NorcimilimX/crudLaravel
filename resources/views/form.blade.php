@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', isset($user) ? 'Update ' .$user->name : 'Create New User')
+@section('title', isset($user) ? 'Update > ' .$user->name : 'Create New User')
 
 @section('content')
 
@@ -21,7 +21,9 @@
             <div class="col">
                 <input name="name"
                        value="{{ old('name', isset($user) ? $user->name : null) }}"
-                       type="text" class="form-control" placeholder="Name">
+                       type="text"
+                       class="form-control form-control-lg list-group-item list-group-item-secondary"
+                       placeholder="Name">
                 @error('name')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
@@ -29,7 +31,9 @@
             <div class="col">
                  <input name="email"
                         value="{{ old('email', isset($user) ? $user->email : null) }}"
-                        type="text" class="form-control" placeholder="Email">
+                        type="text"
+                        class="form-control form-control-lg list-group-item list-group-item-secondary"
+                        placeholder="Email">
                 @error('email')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

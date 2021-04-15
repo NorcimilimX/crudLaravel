@@ -7,8 +7,8 @@
 
     <a class="btn btn-primary" role="button" href="{{ route('users.create') }}">Create User</a>
 
-    <table class="table">
-        <thead>
+    <table class="table table-bordered table table-hover table-dark mt-3">
+        <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
             <th scope="col">Name</th>
@@ -38,4 +38,7 @@
         @endforeach
         </tbody>
     </table>
+
+    {{ $users->links() }}
+
 @endsection
